@@ -32,14 +32,14 @@ body, html {
     /* justify-items: start; */
    
   }
-  img{
-    /* height: fit-content; */
+  /* img{
+    height: fit-content;
 
- /* width: 100%;
- height: 100%;
- display: block;
- object-fit: cover; */
-  }
+    width: 100%;
+    height: 100%; 
+    display: block;
+    object-fit: cover; 
+  } */
   .header_second{
     display: grid;
     grid-template-columns: 2fr 10fr 1fr 1fr 3fr;
@@ -59,33 +59,67 @@ body, html {
     grid-row: 1 / 3;
     background-color: #0ea5e9;
     display: grid;
-    grid-template-columns: minmax(40px, 70px) 4fr;
-
-    grid-template-rows: 2fr repeat(12, 1fr);
-    padding: 20px 20px 100% 20px;
+    grid-template-rows: 1fr 12fr;
+    padding: 20px 20px 60px 20px;
     color: #e5e7eb;
+    gap: 25px;
     
-    gap: 15px;
-    align-content: center;
   }
   .sidebar > div{
     border: 1px solid black;
-    display: flex;
-   
-    align-items: center;
+    
   }
-  /* .sidebar_first{
+  .sidebar_top{
+    display: grid;
+    grid-template-columns: minmax(40px, 70px) 3fr;
+
+  }
+  .sidebar_top > div{
+    /* border: 1px solid black; */
+    display: flex;
+    align-items: center;
+  
+  }
+  .sidebar_bottom{
+    display: grid;
+    grid-template-columns: minmax(30px, 40px) 3fr;
+    /* grid-template-rows: repeat(12, 1fr); */
+    grid-template-rows: repeat(auto-fit, minmax(30px, 40px));
+    gap: 10px;
+    padding-left: 15px;
+    
+  }
+  .sidebar_bottom > div{
+    /* border: 1px solid black; */
+    display: flex;
+    align-items: center;
     font-size: 20px;
     font-weight: bold;
-  } */
+    text-align: start;
+    
+  }
+  .sidebar_bottom > div > img{
+    filter: invert(90%);
+  }
+  .sidebar_first{
+    font-size: 25px;
+    font-weight: bold;
+    text-align: start;
+    
+  }
+  a{
+    text-decoration: none;
+    color: white;
+  }
  
   .dashboard_icon{
     /* height:fit-content; */
     /* object-fit: cover;
     width: 100%;
     max-height: 100%; */
-  filter: invert(100%);  
+  filter: invert(90%);  
   }
+ 
   .main{
     background-color: #e5e7eb;
     display: grid;
